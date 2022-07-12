@@ -1,0 +1,67 @@
+{
+    "pages" : [
+        {
+            "path" : "pages/search/search",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/poetry/poetry",
+		    "style" : {}
+		}
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "汉语词典",
+        "navigationBarBackgroundColor" : "#cce9cd",
+        "backgroundColor" : "#F8F8F8",
+        "app-plus" : {
+            "background" : "#efeff4"
+        }
+    },
+    "subPackages" : [
+        {
+            "root" : "subpackage",
+			"pages": [	
+				{
+					"path" : "word_detail/word_detail",
+					"style" : {}
+				}
+                ,{
+                    "path" : "chapter/chapter",
+                    "style" :                                                                                    
+                {
+                    "onReachBottomDistance": 50,
+					"enablePullDownRefresh": true
+                }
+                
+                }
+                ,{
+                    "path" : "detail/detail",
+                    "style" :                                                                                    
+                {
+                    
+                }
+                
+                }
+            ]
+        }
+    ],
+    "tabBar" : {
+        "selectedColor" : "#a5e9a5",
+        "borderStyle" : "white",
+        "list" : [
+            {
+                "pagePath" : "pages/search/search",
+                "text" : "字典",
+                "iconPath" : "static/search.png",
+                "selectedIconPath" : "static/search-active.png"
+            },
+            {
+                "pagePath" : "pages/poetry/poetry",
+                "text" : "诗词",
+                "iconPath" : "static/poetry.png",
+                "selectedIconPath" : "static/poetry-active.png"
+            }
+        ]
+    }
+}

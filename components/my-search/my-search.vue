@@ -22,11 +22,15 @@
 				if(!keyword) return uni.$showMsg('输入不能为空~')
 				if(keyword.length!=1) return uni.$showMsg('一次只能查一个字哦~')
 				// 点击跳转并传参数
+				let that=this
 				uni.navigateTo({
 					url:'/subpackage/word_detail/word_detail?keyword='+keyword
+					// 不再这里存储历史记录，放在页面跳转后
+					// success:() =>{
+					// 	// 成功跳转后，将关键字存储到本地
+					// 	that.$store.commit('dictionary/updateHistory',keyword)
+					// }
 				})
-				// 将关键字存储到本地
-				this.$store.commit('dictionary/updateHistory',keyword)
 			}
 		}
 	}

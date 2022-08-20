@@ -86,7 +86,7 @@
 
 <style lang="scss">
 .detailContainer{
-	padding-top: 2px;
+	padding: 2px 0;
 	.item{
 		margin-bottom: 10px;
 		

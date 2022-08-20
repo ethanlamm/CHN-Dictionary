@@ -49,6 +49,9 @@
 		},
 		onLoad(options) {
 			this.getWordDetail(options)
+			// 在这里更新搜索记录
+			this.$store.commit('dictionary/updateHistory',options.keyword)
+			// console.log(options);
 		},
 		methods:{
 			async getWordDetail(params){
